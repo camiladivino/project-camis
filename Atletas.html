@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Mulas Backyard Ultra</title>
+</head>
+
+<body>
+  
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+
+  <a class="navbar-brand d-flex align-items-center" href="mbuoficial.html">
+            <img src="./images/MULAS.jpg"
+                alt="Logo Mulas"
+                class="logo-menu">
+                   </a>
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-auto"
+            id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="mbuoficial.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Atletas.html">
+                        Atletas
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.youmovin.com.br/evento/mulas-backyard-ultra-2027_8196">
+                        Inscrições
+                    </a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" href="Contato.html">
+                        Contato
+                    </a>
+                </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    <main class="py-5">
+        <div class="container">
+            
+            <!-- pesquisaa dos nomes dos atletas -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold text-uppercase display-5" style="letter-spacing: 2px;">Busca de Atletas</h1>
+                <p class="text-secondary">Explore quem foram os atletas que participaram da 1ª edição MBU 2026.</p>
+                <hr class="mx-auto border-warning border-3 opacity-100" style="width: 80px;">
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 col-lg-6">
+                    <form class="d-flex gap-2" id="formBusca">
+                    <input type="text" id="campoBusca" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="Digite o nome do atleta...">
+                    <button type="submit" class="btn btn-mulas btn-lg text-uppercase fw-bold px-4">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-4 gap-3">
+                <h3 class="fw-bold text-uppercase mb-0 fs-4 text-warning">Recordes MULAS BACKYARD ULTRA 2026</h3>
+                
+                <div class="btn-group shadow" role="group" aria-label="Filtro de Gênero">
+                    <input type="radio" class="btn-check" name="btnfiltro" id="btnGeral" checked>
+                    <label class="btn btn-outline-warning fw-semibold px-3" for="btnGeral">Geral</label>
+
+                    <input type="radio" class="btn-check" name="btnfiltro" id="btnM">
+                    <label class="btn btn-outline-warning fw-semibold px-3" for="btnM">M</label>
+
+                    <input type="radio" class="btn-check" name="btnfiltro" id="btnF">
+                    <label class="btn btn-outline-warning fw-semibold px-3" for="btnF">F</label>
+                </div>
+            </div>
+
+            <!-- tabelita dos recordes de acordo com o boot -->
+            <div class="table-responsive rounded-3 border border-secondary shadow-lg">
+                <table class="table  table-striped table-hover align-middle mb-0 text-center text-sm-start">
+                    <thead class="table-active border-bottom border-secondary text-uppercase fs-6">
+                        <tr>
+                            <th scope="col" class="text-center py-3 text-warning" style="width: 8%;">#</th>
+                            <th scope="col" class="py-3">Atleta</th>
+                            <th scope="col" class="text-center py-3">Voltas</th>
+                            <th scope="col" class="text-end text-sm-center py-3pe-4">Edição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaAtletas">
+<tr data-genero="M" data-nome="William Dias Tourança Ribeiro"><th scope="row" class="text-center py-3 fw-bold text-warning">1º</th><td class="fw-bold">William Dias Tourança Ribeiro</td><td class="text-center fw-bold">27</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Vanderlei Zanotto"><th scope="row" class="text-center py-3 fw-bold text-muted">2º</th><td class="fw-bold">Vanderlei Zanotto</td><td class="text-center fw-bold">26</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Dejair Kilppe Wurdig"><th scope="row" class="text-center py-3 fw-bold text-muted">3º</th><td class="fw-bold">Dejair Kilppe Wurdig</td><td class="text-center fw-bold">25</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Guilherme Bavaresco"><th scope="row" class="text-center py-3 fw-bold text-muted">4º</th><td class="fw-bold">Guilherme Bavaresco</td><td class="text-center fw-bold">21</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Henrique Luis Cenci"><th scope="row" class="text-center py-3 fw-bold text-muted">5º</th><td class="fw-bold">Henrique Luis Cenci</td><td class="text-center fw-bold">20</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rodrigo Marcelo Brandelli"><th scope="row" class="text-center py-3 fw-bold text-muted">6º</th><td class="fw-bold">Rodrigo Marcelo Brandelli</td><td class="text-center fw-bold">18</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Tábita Garghetti Turcatto"><th scope="row" class="text-center py-3 fw-bold text-muted">7º</th><td class="fw-bold">Tábita Garghetti Turcatto</td><td class="text-center fw-bold">18</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Roberson Sutil"><th scope="row" class="text-center py-3 fw-bold text-muted">8º</th><td class="fw-bold">Roberson Sutil</td><td class="text-center fw-bold">17</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Rosalina Prescendo"><th scope="row" class="text-center py-3 fw-bold text-muted">9º</th><td class="fw-bold">Rosalina Prescendo</td><td class="text-center fw-bold">17</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Jonas Favero"><th scope="row" class="text-center py-3 fw-bold text-muted">10º</th><td class="fw-bold">Jonas Favero</td><td class="text-center fw-bold">16</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Claudir Gallon"><th scope="row" class="text-center py-3 fw-bold text-muted">11º</th><td class="fw-bold">Claudir Gallon</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Joaquim Pedro Weber"><th scope="row" class="text-center py-3 fw-bold text-muted">12º</th><td class="fw-bold">Joaquim Pedro Weber</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Marcel Guedes Hugo"><th scope="row" class="text-center py-3 fw-bold text-muted">13º</th><td class="fw-bold">Marcel Guedes Hugo</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Miguel de Moura Cherubin"><th scope="row" class="text-center py-3 fw-bold text-muted">14º</th><td class="fw-bold">Miguel de Moura Cherubin</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rodrigo Berta"><th scope="row" class="text-center py-3 fw-bold text-muted">15º</th><td class="fw-bold">Rodrigo Berta</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Taynã Farina"><th scope="row" class="text-center py-3 fw-bold text-muted">16º</th><td class="fw-bold">Taynã Farina</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Vanessa Baldissera"><th scope="row" class="text-center py-3 fw-bold text-muted">17º</th><td class="fw-bold">Vanessa Baldissera</td><td class="text-center fw-bold">15</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Danielle Fin Werb"><th scope="row" class="text-center py-3 fw-bold text-muted">18º</th><td class="fw-bold">Danielle Fin Werb</td><td class="text-center fw-bold">14</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Jonathan Gabriel"><th scope="row" class="text-center py-3 fw-bold text-muted">19º</th><td class="fw-bold">Jonathan Gabriel</td><td class="text-center fw-bold">13</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Renata Garibaldi"><th scope="row" class="text-center py-3 fw-bold text-muted">20º</th><td class="fw-bold">Renata Garibaldi</td><td class="text-center fw-bold">13</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Dulcinéia Sartori"><th scope="row" class="text-center py-3 fw-bold text-muted">21º</th><td class="fw-bold">Dulcinéia Sartori</td><td class="text-center fw-bold">12</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Marcelo Schunemann"><th scope="row" class="text-center py-3 fw-bold text-muted">22º</th><td class="fw-bold">Marcelo Schunemann</td><td class="text-center fw-bold">12</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Eric de Carli"><th scope="row" class="text-center py-3 fw-bold text-muted">23º</th><td class="fw-bold">Eric de Carli</td><td class="text-center fw-bold">11</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Evandro Schmitt Dutra"><th scope="row" class="text-center py-3 fw-bold text-muted">24º</th><td class="fw-bold">Evandro Schmitt Dutra</td><td class="text-center fw-bold">11</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Francisco Junior"><th scope="row" class="text-center py-3 fw-bold text-muted">25º</th><td class="fw-bold">Francisco Junior</td><td class="text-center fw-bold">11</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Leandro Castagna"><th scope="row" class="text-center py-3 fw-bold text-muted">26º</th><td class="fw-bold">Leandro Castagna</td><td class="text-center fw-bold">11</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Marcos Pereira"><th scope="row" class="text-center py-3 fw-bold text-muted">27º</th><td class="fw-bold">Marcos Pereira</td><td class="text-center fw-bold">11</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="André Benatto"><th scope="row" class="text-center py-3 fw-bold text-muted">28º</th><td class="fw-bold">André Benatto</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Daiane Rodrigues da Silva"><th scope="row" class="text-center py-3 fw-bold text-muted">29º</th><td class="fw-bold">Daiane Rodrigues da Silva</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Jemerson Hoffmann"><th scope="row" class="text-center py-3 fw-bold text-muted">30º</th><td class="fw-bold">Jemerson Hoffmann</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Kádima Melo de Oliveira"><th scope="row" class="text-center py-3 fw-bold text-muted">31º</th><td class="fw-bold">Kádima Melo de Oliveira</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Marco Aurélio Balottim Cenci"><th scope="row" class="text-center py-3 fw-bold text-muted">32º</th><td class="fw-bold">Marco Aurélio Balottim Cenci</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Mateus Augusto Furlanetto"><th scope="row" class="text-center py-3 fw-bold text-muted">33º</th><td class="fw-bold">Mateus Augusto Furlanetto</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Mateus da Silva Gambirazio"><th scope="row" class="text-center py-3 fw-bold text-muted">34º</th><td class="fw-bold">Mateus da Silva Gambirazio</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Otávio Dalla Cort Bavaresco"><th scope="row" class="text-center py-3 fw-bold text-muted">35º</th><td class="fw-bold">Otávio Dalla Cort Bavaresco</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rafael Francisco de Souza"><th scope="row" class="text-center py-3 fw-bold text-muted">36º</th><td class="fw-bold">Rafael Francisco de Souza</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rafael Pereira Vieira"><th scope="row" class="text-center py-3 fw-bold text-muted">37º</th><td class="fw-bold">Rafael Pereira Vieira</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rogério Salvetti"><th scope="row" class="text-center py-3 fw-bold text-muted">38º</th><td class="fw-bold">Rogério Salvetti</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Sônia Maria Schubert Bolsoni"><th scope="row" class="text-center py-3 fw-bold text-muted">39º</th><td class="fw-bold">Sônia Maria Schubert Bolsoni</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Valéria Mezzaroba Menegaz"><th scope="row" class="text-center py-3 fw-bold text-muted">40º</th><td class="fw-bold">Valéria Mezzaroba Menegaz</td><td class="text-center fw-bold">10</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Christian Ditadi Pezzin"><th scope="row" class="text-center py-3 fw-bold text-muted">41º</th><td class="fw-bold">Christian Ditadi Pezzin</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Cristiano Zanin"><th scope="row" class="text-center py-3 fw-bold text-muted">42º</th><td class="fw-bold">Cristiano Zanin</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Eduardo Portz"><th scope="row" class="text-center py-3 fw-bold text-muted">43º</th><td class="fw-bold">Eduardo Portz</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Marli Terezinha Parizotto"><th scope="row" class="text-center py-3 fw-bold text-muted">44º</th><td class="fw-bold">Marli Terezinha Parizotto</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Samantha dos Reis Panassolo"><th scope="row" class="text-center py-3 fw-bold text-muted">45º</th><td class="fw-bold">Samantha dos Reis Panassolo</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Weslei Ramos"><th scope="row" class="text-center py-3 fw-bold text-muted">46º</th><td class="fw-bold">Weslei Ramos</td><td class="text-center fw-bold">9</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Alais Piccin Concatto"><th scope="row" class="text-center py-3 fw-bold text-muted">47º</th><td class="fw-bold">Alais Piccin Concatto</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Angela Petry"><th scope="row" class="text-center py-3 fw-bold text-muted">48º</th><td class="fw-bold">Angela Petry</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Demétrius de Carvalho Silva"><th scope="row" class="text-center py-3 fw-bold text-muted">49º</th><td class="fw-bold">Demétrius de Carvalho Silva</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Fabiano Prigol"><th scope="row" class="text-center py-3 fw-bold text-muted">50º</th><td class="fw-bold">Fabiano Prigol</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Felipe Ferreira da Silva"><th scope="row" class="text-center py-3 fw-bold text-muted">51º</th><td class="fw-bold">Felipe Ferreira da Silva</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Jéssica Pasini"><th scope="row" class="text-center py-3 fw-bold text-muted">52º</th><td class="fw-bold">Jéssica Pasini</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Julia Zaffari Alessio"><th scope="row" class="text-center py-3 fw-bold text-muted">53º</th><td class="fw-bold">Julia Zaffari Alessio</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Lourenço Rodrigues Junior"><th scope="row" class="text-center py-3 fw-bold text-muted">54º</th><td class="fw-bold">Lourenço Rodrigues Junior</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Lucas Rodrigues"><th scope="row" class="text-center py-3 fw-bold text-muted">55º</th><td class="fw-bold">Lucas Rodrigues</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Pablo Ferreira da Silva"><th scope="row" class="text-center py-3 fw-bold text-muted">56º</th><td class="fw-bold">Pablo Ferreira da Silva</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Taís Luana Roloff Portz"><th scope="row" class="text-center py-3 fw-bold text-muted">57º</th><td class="fw-bold">Taís Luana Roloff Portz</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Vinicius Fracasso"><th scope="row" class="text-center py-3 fw-bold text-muted">58º</th><td class="fw-bold">Vinicius Fracasso</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Warella Antonhio Dresch dos Santos"><th scope="row" class="text-center py-3 fw-bold text-muted">59º</th><td class="fw-bold">Warella Antonhio Dresch dos Santos</td><td class="text-center fw-bold">8</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="João Henrique Ferreira Lanner Carvalho"><th scope="row" class="text-center py-3 fw-bold text-muted">60º</th><td class="fw-bold">João Henrique Ferreira Lanner Carvalho</td><td class="text-center fw-bold">7</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Cristiane de Arruda Lang"><th scope="row" class="text-center py-3 fw-bold text-muted">61º</th><td class="fw-bold">Cristiane de Arruda Lang</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Edenilson Bordingnon"><th scope="row" class="text-center py-3 fw-bold text-muted">62º</th><td class="fw-bold">Edenilson Bordingnon</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Elcio Leite Bezerra"><th scope="row" class="text-center py-3 fw-bold text-muted">63º</th><td class="fw-bold">Elcio Leite Bezerra</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Everson Flores"><th scope="row" class="text-center py-3 fw-bold text-muted">64º</th><td class="fw-bold">Everson Flores</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Fernando Alvares de Sousa"><th scope="row" class="text-center py-3 fw-bold text-muted">65º</th><td class="fw-bold">Fernando Alvares de Sousa</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Ronaldo Silva de Câdia"><th scope="row" class="text-center py-3 fw-bold text-muted">66º</th><td class="fw-bold">Ronaldo Silva de Câdia</td><td class="text-center fw-bold">6</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Jonathan Wittizoorecki"><th scope="row" class="text-center py-3 fw-bold text-muted">67º</th><td class="fw-bold">Jonathan Wittizoorecki</td><td class="text-center fw-bold">5</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Manoel Lorenset Fantin"><th scope="row" class="text-center py-3 fw-bold text-muted">68º</th><td class="fw-bold">Manoel Lorenset Fantin</td><td class="text-center fw-bold">5</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Rodrigo Bergamin"><th scope="row" class="text-center py-3 fw-bold text-muted">69º</th><td class="fw-bold">Rodrigo Bergamin</td><td class="text-center fw-bold">5</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Julia Ribeiro Turcatto"><th scope="row" class="text-center py-3 fw-bold text-muted">70º</th><td class="fw-bold">Julia Ribeiro Turcatto</td><td class="text-center fw-bold">4</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Luiza Cristina dos Santos Cardoso"><th scope="row" class="text-center py-3 fw-bold text-muted">71º</th><td class="fw-bold">Luiza Cristina dos Santos Cardoso</td><td class="text-center fw-bold">4</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="M" data-nome="Mauricio José Testa"><th scope="row" class="text-center py-3 fw-bold text-muted">72º</th><td class="fw-bold">Mauricio José Testa</td><td class="text-center fw-bold">4</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Scheila Graciane de Moura"><th scope="row" class="text-center py-3 fw-bold text-muted">73º</th><td class="fw-bold">Scheila Graciane de Moura</td><td class="text-center fw-bold">4</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Samanta Panosso"><th scope="row" class="text-center py-3 fw-bold text-muted">74º</th><td class="fw-bold">Samanta Panosso</td><td class="text-center fw-bold">3</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+<tr data-genero="F" data-nome="Anny Cappeletti"><th scope="row" class="text-center py-3 fw-bold text-muted">75º</th><td class="fw-bold">Anny Cappeletti</td><td class="text-center fw-bold">2</td><td class="text-end text-sm-center text-secondary pe-4">MBU 2026 <span class="badge bg-warning text-dark fw-bold">2026</span></td></tr>
+</tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- meu footer padrão -->
+   <footer class="bg-black text-secondary pt-5 pb-4 border-top border-dark-subtle">
+        <div class="container">
+            <div class="row g-4">
+                
+                <article class="col-md-4 text-center text-md-start">
+                    <h5 class="text-white fw-bold text-uppercase mb-3">Mulas Backyard Ultra</h5>
+                    <p class="small text-secondary">A corrida de endurance baseada na resiliência mental e física pura, seguindo o formato oficial do Big Dog's Backyard Ultra.</p>
+                </article>
+                
+                <article class="col-md-4 text-center">
+                    <h5 class="text-white fw-bold text-uppercase mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="mbuoficial.html" class="text-secondary text-decoration-none link-warning">Sobre</a></li>
+                        <li class="mb-2"><a href="atletas.html" class="text-secondary text-decoration-none link-warning">Atletas</a></li>
+                        <li class="mb-2"><a href="https://www.youmovin.com.br/evento/mulas-backyard-ultra-2027_8196" class="text-secondary text-decoration-none link-warning">Inscrições</a></li>
+                        <li class="mb-2"><a href="contato.html" class="text-secondary text-decoration-none link-warning">Contato</a></li>
+                    </ul>
+                </article>
+                
+                <article class="col-md-4 text-center text-md-end">
+                    <h5 class="text-white fw-bold text-uppercase mb-3">Fique por dentro da próxima edição!</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+                        <a href="https://www.instagram.com/mulasbackyardultra/" class="text-white bg-dark p-2 rounded-circle border border-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/qr/HYOM4WZJDORZG1" class="text-white bg-dark p-2 rounded-circle border border-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="small mb-0"><i class="fa-regular fa-envelope me-2"></i>mulasbackyardultra@gmail.com</p>
+                </article>
+
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 small text-muted">&copy; 2026 Mulas Backyard Ultra. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- aqui é o script do java para ativar a pesquisa dos nomes dos atletas(pedi ajuda da IA de acordo com bootstrap) -->
+<script>
+const campoBusca = document.getElementById("campoBusca");
+const formBusca = document.getElementById("formBusca");
+const linhas = document.querySelectorAll("#tabelaAtletas tr");
+const botoesGenero = document.querySelectorAll("input[name='btnfiltro']");
+
+function normalizar(texto) {
+    return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+function filtrarTabela() {
+    const busca = normalizar(campoBusca.value.trim());
+    const generoSelecionado = document.querySelector("input[name='btnfiltro']:checked").id;
+
+    linhas.forEach(linha => {
+        const nome = normalizar(linha.getAttribute("data-nome"));
+        const genero = linha.getAttribute("data-genero");
+
+        const nomeCorresponde = nome.includes(busca);
+
+        const generoCorresponde =
+            generoSelecionado === "btnGeral" ||
+            generoSelecionado === "btnM" && genero === "M" ||
+            generoSelecionado === "btnF" && genero === "F";
+
+        if (nomeCorresponde && generoCorresponde) {
+            linha.style.display = "";
+        } else {
+            linha.style.display = "none";
+        }
+    });
+}
+
+campoBusca.addEventListener("input", filtrarTabela);
+
+formBusca.addEventListener("submit", function(event) {
+    event.preventDefault();
+    filtrarTabela();
+});
+
+botoesGenero.forEach(botao => {
+    botao.addEventListener("change", filtrarTabela);
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
